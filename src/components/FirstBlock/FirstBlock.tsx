@@ -18,7 +18,7 @@ export function FirstBlock() {
                             <span className="block text-gradient bg-clip-text text-transparent bg-gradient-to-r from-lime-200 to-white">
                                 Client and Server
                             </span>
-                            for your project's
+                            for your projects
                         </h1>
                     </Reveal>
                     <Reveal>
