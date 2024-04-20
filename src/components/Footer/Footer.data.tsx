@@ -12,7 +12,7 @@ export const footerData = [
       },
       {
         id: 2,
-        name: "See your work",
+        name: "See our work",
         link: "https://github.com/Agus-Albarracin/google-cactus",
       },
       {
