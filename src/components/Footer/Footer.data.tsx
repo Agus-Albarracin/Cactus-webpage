@@ -8,7 +8,7 @@ export const footerData = [
       {
         id: 1,
         name: "NPM Page",
-        link: "#",
+        link: "https://www.npmjs.com/package/google-cactus",
       },
       {
         id: 2,
