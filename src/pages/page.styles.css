@@ -1,0 +1,75 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-gap: 20px; /* Espacio entre las columnas */
+  }
+  
+  .document-page {
+    padding: 20px;
+  }
+
+  .content-area img {
+    max-width: 100%;
+  }
+
+  .space {
+    white-space: pre-wrap;
+  }
+
+  pre {
+    background-color: #494949;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  code {
+    font-family: Consolas, monospace;
+    color: #ffffff;
+    padding: 2px 5px;
+    border-radius: 5px;
+  }
+  
+  strong {
+    color: #C9F3AE; /* Color lima */
+  }
+
+  em {
+    color:sandybrown
+  }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #000000;
+  color: #fff;
+}
+
+::selection {
+  background: #afe86d;
+  color:#000000
+}
+
+.swiper-pagination-bullet {
+  background: #fff !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: rgba(0, 218, 4, 0.6) !important;
+}
+
+
+@keyframes swipe {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translate(-100%);
+  }
+}

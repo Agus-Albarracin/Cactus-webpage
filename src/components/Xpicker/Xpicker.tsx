@@ -1,12 +1,18 @@
 "use client"
-
-import Link from "next/link"
+import { useRouter } from "next/navigation";
 import { BackgroundRadialLeft } from "../BackgroundRadialLeft"
 import { Reveal } from "../Reveal"
 import { dataFeaturesBusiness } from "./Xpicker.data"
 import Image from "next/image"
 
+
 export function Xpicker() {
+    const router = useRouter();
+
+    const handleTitleClick = () => {
+        router.push("/documentation");
+    };
+
     return (
         <div className="relative px-6 py-0 md:py-40" >
             <BackgroundRadialLeft />
@@ -14,17 +20,27 @@ export function Xpicker() {
                 <div>
                     <Reveal>
                         <h2 className="text-5xl font-semibold">
-                        <span className="block degradedLime bg-limeLigh m-2" id="xpicker"></span>
-
-                            <span className="block degradedLime bg-limeLight">Client Side</span>
-                            xpicker 👷 <br />
-                            
+                            <span className="block degradedLime bg-limeLigh m-2" id="xpicker"></span>
+                            <span className="block degradedLime bg-limeLight">
+                                Client Side
+                            </span>
+                            <span
+                                style={{ display: 'flex', alignItems: 'center', cursor: 'pointer' }}
+                                onClick={handleTitleClick}
+                            >
+                                xpicker 👷
+                                <img
+                                    src="/assets/arrow-up-right.svg"
+                                    title="Haz click para ir a la documentación"
+                                    alt="arrow navigation"
+                                />
+                            </span>
                         </h2>
                     </Reveal>
                     <Reveal>
                         <p className="max-w-md mt-10">He is our star operator, working on selecting, organizing, preparing, and sending. It receives 2 arguments:<br />
-                        <br />• The endpoint, which must be a string.
-                        <br />• And the credentialResponse object provided by the React/Google component.
+                            <br />• The endpoint, which must be a string.
+                            <br />• And the credentialResponse object provided by the React/Google component.
                         </p>
                     </Reveal>
                 </div>
@@ -47,4 +63,4 @@ export function Xpicker() {
     )
 }
 
-    
+

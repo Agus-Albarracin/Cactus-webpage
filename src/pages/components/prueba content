@@ -1,0 +1,28 @@
+import React from 'react';
+import { DocumentationContent } from '../types';
+
+interface ContentAreaProps {
+  content: DocumentationContent | null;
+}
+
+const ContentArea: React.FC<ContentAreaProps> = ({ content }) => {
+
+  return (
+    <div className="content-area">
+      {content && (
+        <>
+          <span className="block text-4xl font-bold text-gradient bg-clip-text text-transparent bg-gradient-to-r from-lime-200 to-white">
+            {content.titulo}
+          </span>
+          {content.subtitulos.map((subtitulo, index) => (
+            <div key={index}>
+              {subtitulo.contenido}
+            </div>
+          ))}
+        </>
+      )}
+    </div>
+  );
+};
+
+export default ContentArea;

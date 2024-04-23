@@ -1,12 +1,19 @@
 "use client"
 import 'swiper/css'
 import 'swiper/css/effect-cards'
+import { useRouter } from "next/navigation";
 import { BackgroundRadialRight2 } from "../BackgroundRadialRight2";
 import { Reveal } from "../Reveal";
 import Image from "next/image";
 import { dataFeaturesBusiness2 } from "../Xpicker/Xops.data"
 
 export function Xops() {
+    const router = useRouter();
+
+    const handleTitleClick = () => {
+        router.push("/documentation");
+    };
+
     return (
         <div className="relative px-6 py-0 md:py-12" >
             <BackgroundRadialRight2 />
@@ -16,7 +23,17 @@ export function Xops() {
                         <h2 className="text-5xl font-semibold">
                         <span className="block degradedLime bg-limeLigh" id="xops"></span>
                             <span className="block degradedLime bg-limeLight">Server Side</span>
-                            xops 🏭 <br />
+                            <span
+                                style={{ display: 'flex', alignItems: 'center', cursor: 'pointer' }}
+                                onClick={handleTitleClick}
+                            >
+                                xops 🏭
+                                <img
+                                    src="/assets/arrow-up-right.svg"
+                                    title="Haz click para ir a la documentación"
+                                    alt="arrow navigation"
+                                />
+                            </span>
                             
                         </h2>
                     </Reveal>

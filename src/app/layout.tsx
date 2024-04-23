@@ -6,7 +6,7 @@ const popinsFont = Poppins({ weight: ['400', '600', '700'], subsets: ['latin'] }
 
 export const metadata: Metadata = {
   title: 'Cactus REN',
-  description: 'Follow me for more!',
+  description: 'Extension for Login Google',
 }
 
 export default function RootLayout({
