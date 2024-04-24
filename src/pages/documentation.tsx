@@ -4,7 +4,7 @@ import Sidebar from './components/Sidebar';
 import SidebarSub from './components/SidebarSub';
 import ContentArea from './components/componentArea';
 import { DocumentationContent } from './types';
-import  documentationContent from './documentation/documentationContent';
+import  DocumentationInfo from './documentation/documentationContent';
 import './page.styles.css';
 
 
@@ -25,7 +25,7 @@ const Documentation: React.FC = () => {
       <Head>
         <link rel="icon" href="icon.ico" />
       </Head>
-      <Sidebar content={documentationContent} onContentClick={handleContentClick} />
+      <Sidebar content={DocumentationInfo()} onContentClick={handleContentClick} />
       <ContentArea content={selectedContent} />
       {selectedContent && (
         <SidebarSub subtitulos={selectedContent.subtitulos} onSubtituloClick={handleSubtituloClick} />

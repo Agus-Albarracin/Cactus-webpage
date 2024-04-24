@@ -1,7 +1,9 @@
 import React from 'react';
 import Image from 'next/image';
+import Documentation from '../documentation';
 
-const documentationContent = [
+const DocumentationInfo = () => {
+  return [
   {
     titulo: 'First step',
     subtitulos: [
@@ -215,7 +217,8 @@ export async function signIn(req: Request, res: Response) {
     ]
   }
 ];
+};
 
-export default documentationContent;
+export default DocumentationInfo;
 
 
