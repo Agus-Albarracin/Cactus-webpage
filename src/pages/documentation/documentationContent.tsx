@@ -183,7 +183,7 @@ export default GoogleLoginComponent;
   <br/><br/>
   <p>Este operario cuenta con sus herramientas de try y catch de manera que captura los errores y hace posible la comunicación entre él y el método (nuestro operario de fábrica <strong>xpicker</strong>) de manera que recibe la captura de error y es capaz de mostrar en consola cuando se produce un error.</p>
   <br/>
-  En cuanto a los errores, el único error que puede llegar a generar es el de <em>'El usuario ya existe en la base de datos'</em>, ya que el método solo se utiliza para la utilización del componente <em>login</em> que proporciona <strong>@react-oauth/google.</strong><br/><br/>
+  En cuanto a los errores, el único error que puede llegar a generar es el de <em>El usuario ya existe en la base de datos</em>, ya que el método solo se utiliza para la utilización del componente <em>login</em> que proporciona <strong>@react-oauth/google.</strong><br/><br/>
   <p>Este flujo de información fue creado con el único propósito de la creación de usuarios. Cuenta con los métodos de cualquier ORM en donde busca o crea el usuario para el registro.
   <br/>
   <strong>En cuanto a su configuración...</strong> podríamos simular un controlador de tu código.</p>
