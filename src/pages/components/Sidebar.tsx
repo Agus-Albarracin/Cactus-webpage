@@ -1,4 +1,5 @@
 import { DocumentationContent } from '../types'; // Define el tipo DocumentationContent
+import Image from 'next/image';
 
 interface SidebarProps {
   content: DocumentationContent[];
@@ -8,7 +9,7 @@ interface SidebarProps {
 const Sidebar: React.FC<SidebarProps> = ({ content, onContentClick }) => {
   return (
     <div className="sidebar text-white">
-    <img src="/assets/logo.png" alt="logo" width={"200px"} />
+    <Image src="/assets/logo.png" alt="logo" width={200} height={200}/>
     <h1 className='p-4'>@google-cactus v0.0.2</h1>
       <ul>
         {content.map((item, index) => (

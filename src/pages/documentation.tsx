@@ -14,7 +14,6 @@ const Documentation: React.FC = () => {
 
   const handleContentClick = (content: DocumentationContent) => {
     setSelectedContent(content);
-    // Limpiar el subtitulo seleccionado cuando se hace clic en un nuevo contenido
     setSelectedSubtitulo(null);
   };
 
