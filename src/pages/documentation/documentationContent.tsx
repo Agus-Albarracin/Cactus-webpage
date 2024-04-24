@@ -6,19 +6,19 @@ const documentationContent = [
     titulo: 'First step',
     subtitulos: [
       {
-        titulo: "Inicio",
+        titulo: 'Inicio',
         contenido: (
           <div className='space'>
 
-            <p>Al montar el componente como se explica en la documentación de la librería: <a href="https://www.npmjs.com/package/@react-oauth/google">react-oauth/google</a>, el componente se monta de manera exitosa.</p><br/>
+            <p>Al montar el componente como se explica en la documentación de la librería: <a href='https://www.npmjs.com/package/@react-oauth/google'>react-oauth/google</a>, el componente se monta de manera exitosa.</p><br/>
             <p>Puedes ver incluso en la consola la respuesta, la cual contiene las credenciales del usuario.</p>
 
-            <p>A diferencia de hace unos años, cuando se usaba la librería <a href="https://www.npmjs.com/package/react-google-login"><strong>@react-google-login</strong> </a>, <strong>(esta librería se encuentra obsoleta)</strong>, la librería <strong>@react-oauth/google</strong> no devuelve el objeto profileObj, el cual obtenías con la información del usuario.</p>
+            <p>A diferencia de hace unos años, cuando se usaba la librería <a href='https://www.npmjs.com/package/react-google-login'><strong>@react-google-login</strong> </a>, <strong>(esta librería se encuentra obsoleta)</strong>, la librería <strong>@react-oauth/google</strong> no devuelve el objeto profileObj, el cual obtenías con la información del usuario.</p>
 
             <p>Es importante aclarar que esta librería no pertenece directamente al equipo de React y recomiendo usar las librerías que empiecen con @react que son de la organización.</p>
 
             <br/><br/>
-            <Image src="https://res.cloudinary.com/do1hcqjpe/image/upload/v1713482672/nussxjqhujvyqikhypno.jpg"  alt="profile object -> @react-oauth/google" width={1600} height={800} />
+            <Image src='https://res.cloudinary.com/do1hcqjpe/image/upload/v1713482672/nussxjqhujvyqikhypno.jpg'  alt='profile object -> @react-oauth/google' width={1600} height={800} />
             <br/><br/>
 
             <strong>Peticiones</strong><br/><br/>
@@ -34,7 +34,7 @@ const documentationContent = [
             Y es aquí donde propongo soluciones, pero para entender de qué se trata primero quiero mostrarte algunos posibles errores al utilizar este componente que nos brinda React/Google.</p>
             <br/><br/>
 
-            <Image src="https://res.cloudinary.com/do1hcqjpe/image/upload/v1713481447/k8lnyqsbq66mgyk5kah8.jpg"  alt="Error al post, react-google-login" width={1600} height={800}/>
+            <Image src='https://res.cloudinary.com/do1hcqjpe/image/upload/v1713481447/k8lnyqsbq66mgyk5kah8.jpg'  alt='Error al post, react-google-login' width={1600} height={800}/>
             <br/><br/>
             <strong>Este error es común a la hora de programar...</strong><br/>
             <p>Estamos intentando hacer una petición POST de las credenciales que obtenemos a través de nuestra función onSuccess que brinda la librería. Pero al momento de desencriptarlas, obtenemos errores como este.<br/><br/>
@@ -44,13 +44,13 @@ const documentationContent = [
             Acá les dejo algunos de los métodos que les podrían interesar: <strong>verifyIdToken</strong>, <strong>getPayload</strong>.<br/><br/>
             Incluso utilizando esta librería en nuestro controlador, podríamos tener errores comunes como:</p>
             <br/><br/>
-            <Image src="https://res.cloudinary.com/do1hcqjpe/image/upload/v1713479183/arix4qegjipu1svmqnko.png" alt="Error al post, google-oauth-library"  width={1600} height={800} />
+            <Image src='https://res.cloudinary.com/do1hcqjpe/image/upload/v1713479183/arix4qegjipu1svmqnko.png' alt='Error al post, google-oauth-library'  width={1600} height={800} />
             <br/><br/>
           </div>
         )
       },
       {
-        titulo: "Soluciones",
+        titulo: 'Soluciones',
         contenido: (
           <div className='space'>
             <strong>Soluciones</strong>
@@ -127,8 +127,8 @@ import xpicker from 'google-cactus/cli';
 const GoogleLoginComponent: React.FC = () => {
   const onSuccess = async (credentialResponse: CredentialResponse) => {
     console.log(credentialResponse);
-    const decodedToken = await xpicker("http://localhost:3001/yourEndPoint", credentialResponse);
-    console.log("Decoded token:", decodedToken);
+    const decodedToken = await xpicker('http://localhost:3001/yourEndPoint', credentialResponse);
+    console.log('Decoded token:', decodedToken);
   };
 
   const onError = () => {
@@ -141,10 +141,10 @@ const GoogleLoginComponent: React.FC = () => {
         onSuccess={onSuccess}
         onError={onError}
         useOneTap={true}
-        theme="filled_black"
-        text="continue_with"
-        shape="pill"
-        width="200px"
+        theme='filled_black'
+        text='continue_with'
+        shape='pill'
+        width='200px'
       />
     </>
   );
@@ -183,21 +183,21 @@ export default GoogleLoginComponent;
   <br/><br/>
   <p>Este operario cuenta con sus herramientas de try y catch de manera que captura los errores y hace posible la comunicación entre él y el método (nuestro operario de fábrica <strong>xpicker</strong>) de manera que recibe la captura de error y es capaz de mostrar en consola cuando se produce un error.</p>
   <br/>
-  En cuanto a los errores, el único error que puede llegar a generar es el de <em>"El usuario ya existe en la base de datos"</em>, ya que el método solo se utiliza para la utilización del componente <em>login</em> que proporciona <strong>@react-oauth/google.</strong><br/><br/>
+  En cuanto a los errores, el único error que puede llegar a generar es el de <em>'El usuario ya existe en la base de datos'</em>, ya que el método solo se utiliza para la utilización del componente <em>login</em> que proporciona <strong>@react-oauth/google.</strong><br/><br/>
   <p>Este flujo de información fue creado con el único propósito de la creación de usuarios. Cuenta con los métodos de cualquier ORM en donde busca o crea el usuario para el registro.
   <br/>
   <strong>En cuanto a su configuración...</strong> podríamos simular un controlador de tu código.</p>
   <br/>
             <pre><code>
                {`
-import { Request, Response } from "express";
+import { Request, Response } from 'express';
 import { OAuth2Client } from 'google-auth-library';
 import xops from 'google-cactus/srv';
-import userModel from "../../models/user.model";
-import dotenv from "dotenv";
+import userModel from '../../models/user.model';
+import dotenv from 'dotenv';
 dotenv.config();
 
-const CLIENT_ID = process.env.GOOGLE_CLIENT_ID || "";
+const CLIENT_ID = process.env.GOOGLE_CLIENT_ID || ';
 
 const client = new OAuth2Client(CLIENT_ID);
 
