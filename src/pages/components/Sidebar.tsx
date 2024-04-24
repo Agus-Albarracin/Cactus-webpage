@@ -1,4 +1,4 @@
-import { DocumentationContent } from '../types'; // Define el tipo DocumentationContent
+import { DocumentationContent } from './types'; // Define el tipo DocumentationContent
 import Image from 'next/image';
 
 interface SidebarProps {

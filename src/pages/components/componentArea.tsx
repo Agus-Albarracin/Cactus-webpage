@@ -1,5 +1,5 @@
 import React from 'react';
-import { DocumentationContent } from '../types';
+import { DocumentationContent } from './types';
 
 interface ContentAreaProps {
   content: DocumentationContent | null;
