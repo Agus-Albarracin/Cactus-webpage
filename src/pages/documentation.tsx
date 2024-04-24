@@ -3,7 +3,7 @@ import { useState } from 'react';
 import Sidebar from './components/Sidebar';
 import SidebarSub from './components/SidebarSub';
 import ContentArea from './components/componentArea';
-import { DocumentationContent } from './components/types';
+import { DocumentationContent } from '../utils/types';
 import  DocumentationInfo from './documentation/documentationContent';
 import './page.styles.css';
 

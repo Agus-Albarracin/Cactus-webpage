@@ -1,5 +1,5 @@
 import React from 'react';
-import { DocumentationContent } from './types'; // Define el tipo DocumentationContent
+import { DocumentationContent } from '../../utils/types'; // Define el tipo DocumentationContent
 
 interface SidebarSubProps {
   subtitulos: DocumentationContent['subtitulos'];
