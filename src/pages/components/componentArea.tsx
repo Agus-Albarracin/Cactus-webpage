@@ -1,12 +1,11 @@
 import React from 'react';
-import { DocumentationContent, Subsection } from '../types';
+import { DocumentationContent } from '../types';
 
 interface ContentAreaProps {
   content: DocumentationContent | null;
 }
 
 const ContentArea: React.FC<ContentAreaProps> = ({ content }) => {
-
   return (
     <div className="content-area">
       {content && (
@@ -15,7 +14,7 @@ const ContentArea: React.FC<ContentAreaProps> = ({ content }) => {
             {content.titulo}
           </span>
           {content.subtitulos.map((subtitulo, index) => (
-            <div key={index}>
+            <div key={index} id={subtitulo.titulo}> 
               {typeof subtitulo.contenido === 'string' ? (
                 <p>{subtitulo.contenido}</p>
               ) : (

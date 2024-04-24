@@ -1,40 +1,44 @@
 .grid-container {
-    display: grid;
-    grid-template-columns: 20% 60% 20%;
-    grid-gap: 20px; /* Espacio entre las columnas */
-  }
-  
-  .document-page {
-    padding: 20px;
-  }
+  display: grid;
+  grid-template-columns:20% 60% 20%; /* ajusta este valor según tus necesidades */
+  /* añade cualquier otro estilo necesario */
+}
 
-  .content-area img {
-    max-width: 100%;
-  }
+.sidebar {
+  position: sticky;
+  top: 0; /* Fija la barra lateral en la parte superior */
+  height: 100vh; /* Opcional: ajusta la altura según sea necesario */
+  overflow-y: auto; /* Añade scroll si es necesario */
+  z-index: 1; /* Asegura que la barra lateral esté por encima del contenido */
+}
+
+.content-area {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url('/assets/logowait.png');
+  background-size: 80%; /* Ajusta el tamaño de la imagen */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+/* Estilos para la barra lateral secundaria */
+.sidebar-sub {
+  position: sticky;
+  top: 0; /* Fija la barra lateral secundaria en la parte superior */
+  height: 100vh; /* Opcional: ajusta la altura según sea necesario */
+  overflow-y: auto; /* Añade scroll si es necesario */
+  z-index: 1; /* Asegura que la barra lateral secundaria esté por encima del contenido */
+} 
 
   .space {
     white-space: pre-wrap;
   }
-
-  pre {
-    background-color: #494949;
-    padding: 10px;
-    border-radius: 5px;
-  }
   
-  code {
-    font-family: Consolas, monospace;
-    color: #ffffff;
-    padding: 2px 5px;
-    border-radius: 5px;
-  }
-  
-  strong {
-    color: #C9F3AE; /* Color lima */
-  }
-
-  em {
-    color:sandybrown
+  .logo {
+    max-width: 80%; /* Ajusta el tamaño de la imagen según sea necesario */
+    max-height: 80vh; /* Ajusta la altura máxima de la imagen */
+    object-fit: contain; /* Ajusta la relación de aspecto de la imagen */
   }
 
 @tailwind base;
@@ -48,6 +52,26 @@ html {
 body {
   background-color: #000000;
   color: #fff;
+}
+pre {
+  background-color: #494949;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+code {
+  font-family: Consolas, monospace;
+  color: #ffffff;
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+
+strong {
+  color: #C9F3AE; /* Color lima */
+}
+
+em {
+  color:sandybrown
 }
 
 ::selection {
