@@ -18,7 +18,7 @@ const documentationContent = [
             <p>Es importante aclarar que esta librería no pertenece directamente al equipo de React y recomiendo usar las librerías que empiecen con @react que son de la organización.</p>
 
             <br/><br/>
-            <Image src='https://res.cloudinary.com/do1hcqjpe/image/upload/v1713482672/nussxjqhujvyqikhypno.jpg'  alt='profile object -> @react-oauth/google' width={1600} height={800} />
+            <Image src='https://res.cloudinary.com/do1hcqjpe/image/upload/v1713482672/nussxjqhujvyqikhypno.jpg'  alt='profile object @react-oauth/google' width={1600} height={800} />
             <br/><br/>
 
             <strong>Peticiones</strong><br/><br/>
