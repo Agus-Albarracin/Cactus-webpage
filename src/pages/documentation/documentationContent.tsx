@@ -18,7 +18,7 @@ const documentationContent = [
             <p>Es importante aclarar que esta librería no pertenece directamente al equipo de React y recomiendo usar las librerías que empiecen con @react que son de la organización.</p>
 
             <br/><br/>
-            <Image src='https://res.cloudinary.com/do1hcqjpe/image/upload/v1713482672/nussxjqhujvyqikhypno.jpg'  alt='profile object @react-oauth/google' width={1600} height={800} />
+            <Image src='https://res.cloudinary.com/do1hcqjpe/image/upload/v1713482672/nussxjqhujvyqikhypno.jpg'  alt={'profile object @react-oauth/google'} width={1600} height={800} />
             <br/><br/>
 
             <strong>Peticiones</strong><br/><br/>
@@ -34,7 +34,7 @@ const documentationContent = [
             Y es aquí donde propongo soluciones, pero para entender de qué se trata primero quiero mostrarte algunos posibles errores al utilizar este componente que nos brinda React/Google.</p>
             <br/><br/>
 
-            <Image src='https://res.cloudinary.com/do1hcqjpe/image/upload/v1713481447/k8lnyqsbq66mgyk5kah8.jpg'  alt='Error al post, react-google-login' width={1600} height={800}/>
+            <Image src='https://res.cloudinary.com/do1hcqjpe/image/upload/v1713481447/k8lnyqsbq66mgyk5kah8.jpg'  alt={'Error al post, react-google-login'} width={1600} height={800}/>
             <br/><br/>
             <strong>Este error es común a la hora de programar...</strong><br/>
             <p>Estamos intentando hacer una petición POST de las credenciales que obtenemos a través de nuestra función onSuccess que brinda la librería. Pero al momento de desencriptarlas, obtenemos errores como este.<br/><br/>
@@ -44,7 +44,7 @@ const documentationContent = [
             Acá les dejo algunos de los métodos que les podrían interesar: <strong>verifyIdToken</strong>, <strong>getPayload</strong>.<br/><br/>
             Incluso utilizando esta librería en nuestro controlador, podríamos tener errores comunes como:</p>
             <br/><br/>
-            <Image src='https://res.cloudinary.com/do1hcqjpe/image/upload/v1713479183/arix4qegjipu1svmqnko.png' alt='Error al post, google-oauth-library'  width={1600} height={800} />
+            <Image src='https://res.cloudinary.com/do1hcqjpe/image/upload/v1713479183/arix4qegjipu1svmqnko.png' alt={'Error al post, google-oauth-library'}  width={1600} height={800} />
             <br/><br/>
           </div>
         )
