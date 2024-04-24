@@ -28,10 +28,12 @@ export function Xops() {
                                 onClick={handleTitleClick}
                             >
                                 xops 🏭
-                                <img
+                                <Image
                                     src="/assets/arrow-up-right.svg"
                                     title="Haz click para ir a la documentación"
                                     alt="arrow navigation"
+                                    width={70}
+                                    height={70}
                                 />
                             </span>
                             
