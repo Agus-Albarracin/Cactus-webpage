@@ -28,7 +28,7 @@ const SidebarSub: React.FC<SidebarSubProps> = ({ subtitulos, onSubtituloClick })
     <div className="sidebar-sub" >
       <h2 className='p-4'>Funciones</h2>
       <ul>
-        {subtitulos.map((subtitulo, index) => (
+        {subtitulos && subtitulos.map((subtitulo, index) => (
           <li key={index} onClick={() => handleSubtituloClick(subtitulo)} className="p-2 cursor-pointer">
             <div className="inline-block px-8 py-4 rounded-3xl group hover:bg-radialBlack">
               {subtitulo.titulo}
