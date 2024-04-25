@@ -27,6 +27,7 @@ export function Xpicker() {
                             <span
                                 style={{ display: 'flex', alignItems: 'center', cursor: 'pointer' }}
                                 onClick={handleTitleClick}
+                                title='Haz click para ir a la documentación'
                             >
                                 xpicker 👷
                                 <Image
